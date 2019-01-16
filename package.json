@@ -1,0 +1,18 @@
+{
+  "name": "decimal-to-roman-converter",
+  "version": "1.0.0",
+  "description": "Converts Decimal values between 1 - 3999 to Roman Numeral equivalent",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/Martin-MacDonald/decimal-to-roman-converter.git"
+  },
+  "author": "Martin MacDonald",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
