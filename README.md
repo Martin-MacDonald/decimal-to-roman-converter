@@ -13,7 +13,6 @@ Run:
 ```sh
 $ npm test
 ```
-[See test definition](./test.js)
 
 ## Install in another project directly from npm
 ```sh
