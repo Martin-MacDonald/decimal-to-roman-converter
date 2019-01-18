@@ -1,6 +1,6 @@
 {
   "name": "decimal-to-roman-converter",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Converts Decimal values between 1 - 3999 to Roman Numeral equivalent",
   "main": "index.js",
   "scripts": {
