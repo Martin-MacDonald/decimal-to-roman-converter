@@ -47,7 +47,7 @@ Decimal | Roman
 4 | IV     
 1 | I      
 
-### Function - [See function](./index.js)
+### [Function](./index.js)
 
 - Each decimal - roman translation were separated into their own object for easily accessing the values later.
 - They were then put into an array from highest - lowest decimal value.
@@ -60,7 +60,7 @@ Decimal | Roman
   - If the supplied number is less than the index's decimal value then move to the next index in the array.
   - Finally once the array has been looped through return the generated roman conversion.
 
-### Handling Errors - [See custom errors](./errors.js)
+### [Handling Errors](./errors.js)
 
 - To make the function robust there are two custom error objects created to effectively handle wrong inputs:
   - If the input is not a number (in JavaScript terms) it will throw a NotNumberException
@@ -68,7 +68,7 @@ Decimal | Roman
 - Returning custom errors will mean the user will have a good understanding of why their input is wrong
 - All the error handling is done at the start of the function to stop any unecessary code executing.
 
-### Testing - [See test definition](./test.js)
+### [Testing](./test.js)
 
 - The jest package was installed as the testing framework - it allows you to create tests that output human readable test cases.
 - Instead of testing all possible values from 1 - 3999 only a selected set of test cases were included:
