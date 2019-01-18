@@ -86,4 +86,4 @@ Decimal | Roman
   - [jest](https://www.npmjs.com/package/jest) v23.6.0
 
 ## Licence
-Copyright © 2019, Martin Bolton MacDonald. Released under the MIT [License](LICENCE).
+Copyright © 2019, Martin Bolton MacDonald. Released under the MIT [License](LICENSE).
