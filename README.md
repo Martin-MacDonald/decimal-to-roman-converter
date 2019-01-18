@@ -30,7 +30,7 @@ generator(3999);
 - Although there is only 7 distinct roman symbols, given the subtractive pattern that is used it would mean a total of 13 different translations were possible:
 
 Decimal | Roman 
---- | --- 
+:---: | :---: 
 1000 | M 
 900 | CM     
 500 | D     
