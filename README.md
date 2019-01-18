@@ -2,22 +2,24 @@
   > Convert any decimal integer from 1 - 3999 to the equivalent roman numeral.
 
 ## Setup
-Install packages with [npm](https://www.npmjs.com/):
+1. Download the project.
+2. Install packages with [npm](https://www.npmjs.com/):
 ```sh
 $ npm install
 ```
 
 ## Running Tests
-[See test definition](./test.js)
+Run:
 ```sh
 $ npm test
 ```
+[See test definition](./test.js)
 
-## Install Directly from npm
+## Install in another project directly from npm
 ```sh
 $ npm install --save decimal-to-roman-converter
 ```
-To use
+To use:
 ```sh
 const generator = require('decimal-to-roman-converter');
 generator(3999);
@@ -54,7 +56,7 @@ Decimal | Roman
   - Loop through the translations array.
   - While the supplied number is greater than or equal to that index's decimal value then:
     - Append the roman value to the conversion string.
-    - The subtract the decimal value from the supplied number.
+    - Then subtract the decimal value from the supplied number.
   - If the supplied number is less than the index's decimal value then move to the next index in the array.
   - Finally once the array has been looped through return the generated roman conversion.
 
@@ -64,7 +66,7 @@ Decimal | Roman
   - If the input is not a number (in JavaScript terms) it will throw a NotNumberException
   - If the input is a number but not within the range 1 - 3999 (the general limit for roman numerals) or is not a valid Integer then it will throw a NotValidIntegerException
 - Returning custom errors will mean the user will have a good understanding of why their input is wrong
-- All the error handling is done at the start of the function to stop any unecessary code executin.
+- All the error handling is done at the start of the function to stop any unecessary code executing.
 
 ### Testing
 
