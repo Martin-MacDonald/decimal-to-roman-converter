@@ -59,6 +59,7 @@ Decimal | Roman
     - Then subtract the decimal value from the supplied number.
   - If the supplied number is less than the index's decimal value then move to the next index in the array.
   - Finally once the array has been looped through return the generated roman conversion.
+[See function](./index.js)
 
 ### Handling Errors
 
@@ -67,6 +68,7 @@ Decimal | Roman
   - If the input is a number but not within the range 1 - 3999 (the general limit for roman numerals) or is not a valid Integer then it will throw a NotValidIntegerException
 - Returning custom errors will mean the user will have a good understanding of why their input is wrong
 - All the error handling is done at the start of the function to stop any unecessary code executing.
+[See custom errors](./errors.js)
 
 ### Testing
 
@@ -76,6 +78,7 @@ Decimal | Roman
   - A set of more complicated numbers that tested the generator was handling the subtractive pattern correctly.
   - A set of non-valid integers to make sure the proper error was returned.
   - A set of values that were not a number to make sure the proper error was returned.
+[See test definition](./test.js)
 
 ## Assumptions
 - Without testing all the integers from 1 - 3999 it is assumed that the limited test case is sufficient to prove functionality.
@@ -84,4 +87,4 @@ Decimal | Roman
 ## Technologies Utilised
   - Node v10.15.0
   - npm v6.4.1
-  - jest
+  - [jest](https://www.npmjs.com/package/jest) v23.6.0
