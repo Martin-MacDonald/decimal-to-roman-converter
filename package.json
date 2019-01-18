@@ -11,8 +11,14 @@
     "url": "https://github.com/Martin-MacDonald/decimal-to-roman-converter.git"
   },
   "author": "Martin MacDonald",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "jest": "^23.6.0"
-  }
+  },
+  "keywords": [
+    "roman",
+    "numeral",
+    "converter",
+    "decimal"
+  ]
 }
