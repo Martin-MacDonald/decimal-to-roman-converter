@@ -47,7 +47,7 @@ Decimal | Roman
 4 | IV     
 1 | I      
 
-### Function
+### Function - [See function](./index.js)
 
 - Each decimal - roman translation were separated into their own object for easily accessing the values later.
 - They were then put into an array from highest - lowest decimal value.
@@ -58,27 +58,24 @@ Decimal | Roman
     - Append the roman value to the conversion string.
     - Then subtract the decimal value from the supplied number.
   - If the supplied number is less than the index's decimal value then move to the next index in the array.
-  - Finally once the array has been looped through return the generated roman conversion.__
-[See function](./index.js)
+  - Finally once the array has been looped through return the generated roman conversion.
 
-### Handling Errors
+### Handling Errors - [See custom errors](./errors.js)
 
 - To make the function robust there are two custom error objects created to effectively handle wrong inputs:
   - If the input is not a number (in JavaScript terms) it will throw a NotNumberException
   - If the input is a number but not within the range 1 - 3999 (the general limit for roman numerals) or is not a valid Integer then it will throw a NotValidIntegerException
 - Returning custom errors will mean the user will have a good understanding of why their input is wrong
-- All the error handling is done at the start of the function to stop any unecessary code executing.__
-[See custom errors](./errors.js)
+- All the error handling is done at the start of the function to stop any unecessary code executing.
 
-### Testing
+### Testing - [See test definition](./test.js)
 
 - The jest package was installed as the testing framework - it allows you to create tests that output human readable test cases.
 - Instead of testing all possible values from 1 - 3999 only a selected set of test cases were included:
   - As set of simple values to prove the generator was working.
   - A set of more complicated numbers that tested the generator was handling the subtractive pattern correctly.
   - A set of non-valid integers to make sure the proper error was returned.
-  - A set of values that were not a number to make sure the proper error was returned.__
-[See test definition](./test.js)
+  - A set of values that were not a number to make sure the proper error was returned.
 
 ## Assumptions
 - Without testing all the integers from 1 - 3999 it is assumed that the limited test case is sufficient to prove functionality.
