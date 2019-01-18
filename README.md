@@ -27,8 +27,8 @@ generator(3999);
 ## Approach
 ### Understanding
 
-- First step in creating the generator was to understand all the possible decimal - roman translationss. 
-- Although there is only 7 distinct roman symbols, given the subtractive pattern that is used it would mean a total of 13 different translations were possible:
+- First step in creating the generator was to understand all the possible decimal - roman translations. 
+- Although there is only 7 distinct roman symbols, given the subtractive pattern that is used, it would mean a total of 13 different translations were possible:
 
 Decimal | Roman 
 :---: | :---: 
@@ -50,7 +50,7 @@ Decimal | Roman
 
 - Each decimal - roman translation were separated into their own object for easily accessing the values later.
 - They were then put into an array from highest - lowest decimal value.
-- The order of the array is crucial to given that roman numerals read from left - right the same as decimal values.
+- The order of the array is crucial given that roman numerals read from left - right the same as decimal values.
 - To actually generate the roman numeral is a simple process:
   - Loop through the translations array.
   - While the supplied number is greater than or equal to that index's decimal value then:
@@ -63,7 +63,7 @@ Decimal | Roman
 
 - To make the function robust there are two custom error objects created to effectively handle wrong inputs:
   - If the input is not a number (in JavaScript terms) it will throw a NotNumberException
-  - If the input is a number but not within the range 1 - 3999 (the general limit for roman numerals) or is not a valid Integer then it will throw a NotValidIntegerException
+  - If the input is a number but not within the range 1 - 3999 (the general limit for roman numerals) or is not a valid nteger then it will throw a NotValidIntegerException
 - Returning custom errors will mean the user will have a good understanding of why their input is wrong
 - All the error handling is done at the start of the function to stop any unecessary code executing.
 
