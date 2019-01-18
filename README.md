@@ -19,7 +19,7 @@ $ npm test
 $ npm install --save decimal-to-roman-converter
 ```
 To use:
-```sh
+```js
 const generator = require('decimal-to-roman-converter');
 generator(3999);
 ``` 
