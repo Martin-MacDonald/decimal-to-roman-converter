@@ -85,5 +85,9 @@ Decimal | Roman
   - npm v6.4.1
   - [jest](https://www.npmjs.com/package/jest) v23.6.0
 
+## Author
+Martin Bolton MacDonald
+- [github/martin-macdonald](https://github.com/Martin-MacDonald)
+
 ## Licence
 Copyright © 2019, Martin Bolton MacDonald. Released under the MIT [License](LICENSE).
