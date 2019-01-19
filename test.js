@@ -22,7 +22,7 @@ for (let i = 0; i < testCases.length; i++) {
   });
 }
 
-test(`Expect input of 4000 to throw a NotValidIntegerException`, () => {
+test('Expect input of 4000 to throw a NotValidIntegerException', () => {
   try {
     generator(4000);
     throw new Error('Expected to fail with a NotValidIntegerException');
@@ -31,7 +31,7 @@ test(`Expect input of 4000 to throw a NotValidIntegerException`, () => {
   }
 });
 
-test(`Expect input of -1 to throw a NotValidIntegerException`, () => {
+test('Expect input of -1 to throw a NotValidIntegerException', () => {
   try {
     generator(-1);
     throw new Error('Expected to fail with a NotValidIntegerException');
@@ -40,7 +40,7 @@ test(`Expect input of -1 to throw a NotValidIntegerException`, () => {
   }
 });
 
-test(`Expect input of "8" to throw a NotValidIntegerException`, () => {
+test('Expect input of "8" to throw a NotValidIntegerException', () => {
   try {
     generator('8');
     throw new Error('Expected to fail with a NotValidIntegerException');
@@ -49,7 +49,7 @@ test(`Expect input of "8" to throw a NotValidIntegerException`, () => {
   }
 });
 
-test(`Expect input of 1.1 to throw a NotValidIntegerException`, () => {
+test('Expect input of 1.1 to throw a NotValidIntegerException', () => {
   try {
     generator(1.1);
     throw new Error('Expected to fail with a NotValidIntegerException');
@@ -58,7 +58,7 @@ test(`Expect input of 1.1 to throw a NotValidIntegerException`, () => {
   }
 });
 
-test(`Expect input of null to throw a NotValidIntegerException`, () => {
+test('Expect input of null to throw a NotValidIntegerException', () => {
   try {
     generator(null);
     throw new Error('Expected to fail with a NotValidIntegerException');
@@ -67,7 +67,7 @@ test(`Expect input of null to throw a NotValidIntegerException`, () => {
   }
 });
 
-test(`Expect input of "a" to throw a NotNumberException`, () => {
+test('Expect input of "a" to throw a NotNumberException', () => {
   try {
     generator('a');
     throw new Error('Expected to fail with a NotNumberException');
@@ -76,7 +76,7 @@ test(`Expect input of "a" to throw a NotNumberException`, () => {
   }
 });
 
-test(`Expect input of undefined to throw a NotNumberException`, () => {
+test('Expect input of undefined to throw a NotNumberException', () => {
   try {
     generator(undefined);
     throw new Error('Expected to fail with a NotNumberException');
